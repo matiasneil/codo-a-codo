@@ -1,0 +1,21 @@
+.redBox {
+  color: yellow;
+  background-color: red;
+}
+
+.blackBox {
+  color: white;
+  background-color: black;
+}
+
+.box {
+  margin: 3px 3px;
+  font-size: 2em;
+  height: 200px;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
