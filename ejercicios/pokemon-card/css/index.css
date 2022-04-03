@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.designedCard {
+  height: 408px;
+}
+
+.card {
+  height: 391px;
+  width: 288px;
+  background-color: #ff8b01;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 13px;
+}
+
+.card img {
+  display: block;
+  margin: auto;
+}
+
+.cardHeader {
+  height: 33px;
+  width: 160px;
+  position: relative;
+  top: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 11px;
+  border: 2px solid black;
+  background-color: #ff4400;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  margin-top: 17px;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+.description p {
+  margin: 0;
+}
