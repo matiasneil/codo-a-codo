@@ -11,43 +11,52 @@ Table of contents
 7. Pricing
 8. Contact
 --------------------------------------------- */
-
-html {font-family: 'Open Sans', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+body {
+  font-family: 'Roboto Slab', sans-serif;
+}
 /* Typography */
-p, a {font-weight: 400;}
-.h2 {font-size: 40px;}
-.h3 {font-size: 28px;}
+p,
+a {
+  font-weight: 400;
+}
+.h2 {
+  font-size: 40px;
+}
+.h3 {
+  font-size: 28px;
+}
 .light-300 {
-  font-family: 'Open Sans', sans-serif !important;
   font-weight: 300;
 }
 .regular-400 {
-  font-family: 'Open Sans', sans-serif !important;
   font-weight: 400;
 }
 .semi-bold-600 {
-  font-family: 'Open Sans', sans-serif !important;
   font-weight: 600;
 }
 .typo-space-line::after,
 .typo-space-line-center::after {
   content: "";
   width: 150px;
-  display:block;
+  display: block;
   position: absolute;
-  border-bottom:  5px solid #6266ea;
-  padding-top: .5em;
+  border-bottom: 5px solid #6266ea;
+  padding-top: 0.5em;
 }
 .typo-space-line-center::after {
   left: 50%;
   margin-left: -75px;
 }
 /* Main Nav */
-#main_nav .nav-item .nav-link:hover {color: #fff;}
+#main_nav .nav-item .nav-link:hover {
+  color: #fff;
+}
 /* Home */
 #index_banner {
-  background-image: url('./../img/banner-bg-01.jpg');
-  background-position: center center; background-size: cover;
+  background-image: url("./../img/banner-bg-01.jpg");
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   min-height: 60vh;
   width: 100%;
@@ -67,7 +76,19 @@ p, a {font-weight: 400;}
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
   background-color: #6266ea !important;
-  // las rayas de abajo del carrousel van de color azul
+}
+#jumbotron-section {
+  background-color: #000;
+  color: #fff;
+}
+#painting-service {
+  background-image: url("./../img/painting.jpg");
+}
+#cleaning-service {
+  background-image: url("./../img/cleaning.jpg");
+}
+#calibration-service {
+  background-image: url("./../img/calibration.png");
 }
 .service-wrapper .service-footer {
   max-width: 720px;
@@ -77,35 +98,47 @@ p, a {font-weight: 400;}
   cursor: pointer;
 }
 .service-work .service-work-vertical {
-	background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 17.33%,
+    rgba(255, 255, 255, 1) 66.66%,
+    rgba(255, 255, 255, 0) 84.99%
+  );
   background-size: 300% 300%;
   background-position: 0% 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 .service-work .service-work-vertical:hover {
   background-position: 0% 0%;
-  transition: .5s;
+  transition: 0.5s;
 }
 .service-work .service-work-vertical:hover * {
   color: #000;
   border-color: #000;
-  transition: .5s;
+  transition: 0.5s;
 }
-.recent-work.card{
+.recent-work.card {
   border-radius: 10px !important;
 }
 .recent-work .recent-work-vertical {
-	background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 33.333%,
+    rgba(255, 255, 255) 66.666%,
+    rgba(255, 255, 255, 0) 84.99%
+  );
   background-size: 300% 300%;
   background-position: 0% 100%;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .recent-work .recent-work-vertical:hover {
   background-position: 0% 0%;
-  transition: .5s;
+  transition: 0.5s;
 }
 .recent-work .recent-work-vertical:hover div.recent-work-content {
   top: 50%;
@@ -114,12 +147,13 @@ p, a {font-weight: 400;}
 }
 .recent-work .recent-work-vertical:hover * {
   color: white;
-  transition: .5s;
+  transition: 0.5s;
 }
 /* About */
 #work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-  background-position: center center; background-size: cover;
+  background-image: url("./../img/banner-bg-02.jpg");
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -139,10 +173,22 @@ p, a {font-weight: 400;}
   background-color: #b1b3f5;
 }
 .why-us {
-  background: rgb(239,239,253);
-  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
-  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: rgb(239, 239, 253);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(239, 239, 253, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(239, 239, 253, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(239, 239, 253, 1) 50%,
+    rgba(255, 255, 255, 1) 50%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
 }
 .team-member-img {
@@ -155,7 +201,7 @@ p, a {font-weight: 400;}
 /* Work */
 /* Singel Work */
 #work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: url("./../img/banner-bg-02.jpg");
   background-position: center center;
   background-size: cover;
   height: 100%;
@@ -179,10 +225,43 @@ p, a {font-weight: 400;}
 }
 /* Contact */
 #floatingtextarea {
-  height: 150px
+  height: 150px;
 }
 /* Footer */
 footer a.text-light:hover {
   color: #bfbfbf !important;
   transition-duration: 0.15s;
+}
+
+/* Background and hover colors */
+.bg-brown {
+  background-color: rgb(80, 36, 0) !important;
+}
+
+.bg-black {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.bg-brown-darker {
+  background-color: rgb(48, 22, 0) !important;
+}
+
+.filter-btn.bg-brown-darker:hover {
+  background-color: rgb(66, 30, 0) !important;
+}
+
+.bg-white-btn {
+  background-color: rgb(255, 255, 255) !important;
+  color: #000 !important;
+  border-width: 0px;
+  box-shadow: none !important;
+}
+
+.bg-white-btn:hover, .bg-white-btn.active {
+  background-color: rgb(66, 30, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.text-brown {
+  color: rgb(80, 36, 0) !important;
 }
